@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+text-transform: uppercase;
+}
+
+
+</style>
+<title>IChienla</title>
+</head>
+<body>
+
+	<form action="" method="post" onsubmit="return validarDados() ? true : false" >
+		<table style="background: grey">
+			<tr>
+				<td><label>Nome:</label>
+				<input type="text" id="nome"name="nome"></td>
+			</tr>
+
+			<tr>
+				<td><label>Login: </label> <input type="text" id="login"
+					name="login"></td>
+			</tr>
+
+			<tr>
+				<td>
+				<label>senha: </label>
+				 <input type="password" id="senha"name="senha" style=" border-radius: 5px;">
+					</td>
+			</tr>
+
+
+			<tr>
+				<td><input type="submit" value="salvar" style="width: 100%; border-radius: 5px;"></td>
+			</tr>
+
+		</table>
+	</form>
+	
+<script type="text/javascript">
+
+
+
+
+function validarDados() {
+	var nome = document.getElementById("nome").value;
+	var login = document.getElementById("login").value;
+	var senha = document.getElementById("senha").value;
+	
+	if(nome == ''){
+	 alert('inform o nome');
+	 return false;
+	}else if(login == ''){
+		 alert('inform o login');
+		 return false;
+	}else if(senha == ''){
+		 alert('inform a senha');
+		 return false;
+	}	
+	
+	}
+	
+	 
+	 
+	 
+	
+
+
+</script>
+
+</body>
+</html>
